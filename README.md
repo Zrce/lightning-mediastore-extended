@@ -2,6 +2,7 @@
 
 This is based on Michael Rhee's 
 https://github.com/blastshielddown/lapp-crash-course
+
 https://medium.com/@rheedio/a-crash-course-in-lightning-app-development-part-deux-51a8e48a4540
 
 This code is extending the original application with:
