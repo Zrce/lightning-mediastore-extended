@@ -33,9 +33,7 @@ let macaroonCreds = grpc.credentials.createFromMetadataGenerator((_args, callbac
   callback(null, metadata);
 });
 
-let lndCert = fs.readFileSync(process.env.PATH_TO_TLS_CERT);
-
-let sslCreds = grpc.credentials.createSsl(lndCert);
+let sslCreds = grpc.credentials.createSsl();
 let credentials = grpc.credentials.combineChannelCredentials(sslCreds, macaroonCreds);
 
 let lnrpcDescriptor = grpc.loadPackageDefinition(packageDefinition);
